@@ -1,5 +1,5 @@
-#include "extractor/guidance/constants.hpp"
 #include "extractor/guidance/turn_analysis.hpp"
+#include "extractor/guidance/constants.hpp"
 
 #include "util/coordinate.hpp"
 #include "util/coordinate_calculation.hpp"
@@ -226,10 +226,7 @@ Intersection TurnAnalysis::handleSliproads(const EdgeID source_edge_id,
     return intersection;
 }
 
-const IntersectionGenerator& TurnAnalysis::getGenerator() const
-{
-    return intersection_generator;
-}
+const IntersectionGenerator &TurnAnalysis::getGenerator() const { return intersection_generator; }
 
 } // namespace guidance
 } // namespace extractor

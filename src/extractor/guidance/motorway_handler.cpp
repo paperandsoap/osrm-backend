@@ -383,7 +383,7 @@ Intersection MotorwayHandler::fromRamp(const EdgeID via_eid, Intersection inters
                 {
                     // circular order indicates a merge to the left (0-3 onto 4
                     if (angularDeviation(intersection[1].turn.angle, STRAIGHT_ANGLE) <
-                        2*NARROW_TURN_ANGLE)
+                        2 * NARROW_TURN_ANGLE)
                         intersection[1].turn.instruction = {TurnType::Merge,
                                                             DirectionModifier::SlightLeft};
                     else // fallback
